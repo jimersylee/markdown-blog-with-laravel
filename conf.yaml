@@ -1,0 +1,31 @@
+#配置文件，使用4个空格代替Tab
+---
+url: http://local.blog.laravel.com/
+title: Jimersy Lee's Blog
+subtitle: Just for fun
+theme: quest
+enableCache: true
+highlight: true
+mathjax: true
+katex: false
+disqus: jimersylee
+baiduAnalytics: 3f9957e676a9733fcd02eb9f0e5f9416
+keywords: Jimersy Lee,jimersylee,java,php,python,js,html,github
+description: >
+  这是Jimersy Lee的个人博客
+version: 2.3.2
+author:
+  name: jimersylee
+  email: jimersylee@gmail.com
+  github: jimersylee
+  weibo:  Jimersy_Lee
+  avatar:
+blog:
+  recentSize: 5
+  pageSize: 10
+  pageBarSize: 5
+  allBlogsForPage: false
+text:
+  title: 介绍
+  intro: >
+    “What I cannot create, I do not understand.” – Richard Feynman

@@ -10,9 +10,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -116,6 +118,10 @@
       <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
       <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
       <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/somesh/php-query" />
+      <path value="$PROJECT_DIR$/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/mustangostang/spyc" />
     </include_path>
   </component>
   <component name="ProjectId" id="1eqI4rHhjl9tsMWQGdtsP6adcn5" />
@@ -136,6 +142,18 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/blog" />
+      <recent name="$PROJECT_DIR$/config" />
+      <recent name="$PROJECT_DIR$/app/Services" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Models" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -152,6 +170,7 @@
       <updated>1595042507950</updated>
       <workItem from="1595042509034" duration="42000" />
       <workItem from="1595042562825" duration="5956000" />
+      <workItem from="1595061279937" duration="13039000" />
     </task>
     <servers />
   </component>
@@ -159,13 +178,33 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="740" y="465" width="430" height="173" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1595076130401">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="740" y="465" width="430" height="173" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/0.28.1920.1052@0.28.1920.1052" timestamp="1595076130401" />
+    <state x="592" y="452" width="726" height="199" key="ComposerInitDialogKey" timestamp="1595073811846">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="592" y="452" width="726" height="199" key="ComposerInitDialogKey/0.28.1920.1052@0.28.1920.1052" timestamp="1595073811846" />
+    <state x="346" y="209" width="1218" height="686" key="NewPhpClassDialog" timestamp="1595072352479">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="346" y="209" width="1218" height="686" key="NewPhpClassDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1595072352479" />
     <state x="362" y="101" key="SettingsEditor" timestamp="1595042550152">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="362" y="101" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1595042550152" />
-    <state width="811" height="498" key="SwitcherDM" timestamp="1595049165605">
+    <state width="811" height="498" key="SwitcherDM" timestamp="1595076074050">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state width="811" height="498" key="SwitcherDM/0.28.1920.1052@0.28.1920.1052" timestamp="1595049165605" />
+    <state width="811" height="498" key="SwitcherDM/0.28.1920.1052@0.28.1920.1052" timestamp="1595076074050" />
+    <state x="549" y="204" width="840" height="700" key="find.popup" timestamp="1595085530421">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="549" y="204" width="840" height="700" key="find.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1595085530421" />
+    <state x="495" y="45" width="928" height="1034" key="search.everywhere.popup" timestamp="1595084471801">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="495" y="45" width="928" height="1034" key="search.everywhere.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1595084471801" />
   </component>
 </project>
