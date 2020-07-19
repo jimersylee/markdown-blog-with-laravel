@@ -378,10 +378,8 @@ class Markdown
         //先读缓存
         if (!$this->globalDataCacheRead()) {
             //列出所有文件，可能包含非markdown文件
-            //$mdFiles = get_dir_file_info($postPath, FALSE);
             $fileSystem = new Filesystem();
             $mdFiles = $fileSystem->allFiles($postPath, false);
-//var_dump($mdFiles);exit;
             $this->readAllPostInfo($mdFiles, $postPath);
         }
     }
@@ -561,20 +559,21 @@ class Markdown
             $ctime = date("Y-m-d H:i:s", $fileProp->getCTime());
 
             $sitePath = $this->changeFileExt($fileProp->getRelativePath());
-            $siteURI = "/blog/" . $this->changeFileExt($fileProp->getRelativePathname());
-            $siteURI = $this->urlEncodeURI($siteURI);
-            $blogId = md5($siteURI);
+            $siteURI = "blog/" . $this->changeFileExt($fileProp->getRelativePathname());
             $siteURL = $this->baseurl . $siteURI;
+            $relativePathname = $this->changeFileExt($fileProp->getRelativePathname());
+            $blogId = md5($relativePathname);
             $serverPath = $fileProp->getPathname();
             $blog = array(
+                "relativePathname" => $relativePathname,
                 "blogId" => $blogId,
-                "uri"=>$siteURI,
                 "fileName" => $fileName,
                 "serverPath" => $serverPath,
                 "sitePath" => $sitePath,
                 "mtime" => $mtime,
                 "ctime" => $ctime,
                 "siteURL" => $siteURL,
+                "siteURLEncode" => urlencode($siteURL)
             );
 
             //读取自定义博客属性信息
@@ -717,7 +716,7 @@ class Markdown
     }
 
     //对URL中的中文编码
-    private function urlEncodeURI($fileName)
+    public function urlEncodeURI($fileName)
     {
         $pics = explode('/', $fileName);
         $len = count($pics);

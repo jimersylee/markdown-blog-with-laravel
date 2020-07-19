@@ -32,7 +32,7 @@ Route::get("tags/{tagId}.html","MarkdownBlog@tags");
 Route::get("archive/{yearMonthId}/page/{pageNo}.html","MarkdownBlog@archive");
 Route::get("archive/{yearMonthId}.html","MarkdownBlog@archive");
 
-Route::get("blog/{blogId}.html","MarkdownBlog@blog");
+Route::get("blog/{blogId}","MarkdownBlog@blog")->where('blogId',"(.*)");
 
 Route::get("search","MarkdownBlog@search");
 

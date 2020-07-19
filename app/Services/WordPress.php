@@ -18,9 +18,7 @@ class WordPress
 
     public function __construct()
     {
-        helper("xml");
-        helper("file");
-        $this->wpPath = str_replace("\\", "/", dirname(APPPATH)) . '/wordpress.xml';
+        $this->wpPath = str_replace("\\", "/", dirname(app_path())) . '/wordpress.xml';
     }
 
     //读取配置文件
@@ -93,7 +91,7 @@ class WordPress
 
     public static function writeMarkdown($wpObj)
     {
-        $wpmdPath = str_replace("\\", "/", dirname(APPPATH)) . '/blog/wp/';
+        $wpmdPath = str_replace("\\", "/", dirname(app_path())) . '/blog/wp/';
         if (!file_exists($wpmdPath)) mkdir($wpmdPath);
 
         //创建文件
