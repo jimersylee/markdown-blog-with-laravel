@@ -13,28 +13,28 @@ use Illuminate\Support\Facades\Cache;
 
 class MarkdownBlog extends BaseController
 {
-    protected $twig;
-    protected $export = false;
-    protected $data;
-    protected $confObj;
-    protected $markdown;
+    protected Twig $twig;
+    protected bool $export = false;
+    protected array $data;
+    protected array $confObj;
+    protected Markdown $markdown;
     /**
      * @var Request
      */
-    protected $request;
+    protected Request $request;
     /**
      * @var Response
      */
-    protected $response;
-    protected $yaml;
+    protected Response $response;
+    protected Yaml $yaml;
     /**
      * @var Pager
      */
-    protected $pager;
+    protected Pager $pager;
     /**
      * @var string
      */
-    private $blogPath;
+    private string $blogPath;
 
     public function __construct(Request $request, Response $response, Markdown $markdown, Yaml $yaml, Pager $pager)
     {
@@ -91,19 +91,19 @@ class MarkdownBlog extends BaseController
     }
 
     /** 首页
-     * @return Response
+     * @return string
      */
-    public function index()
+    public function index(): string
     {
         return $this->page(1);
     }
 
-    public function feed()
+    public function feed(): string
     {
-        return "fed";
+        return "feed";
     }
 
-    public function page($pageNo)
+    public function page($pageNo): string
     {
         $pageNo = (int)$pageNo;
         $pageSize = $this->confObj['blog']['pageSize'];
@@ -130,7 +130,7 @@ class MarkdownBlog extends BaseController
         return $this->render('index');
     }
 
-    public function category($categoryId, $pageNo = 1)
+    public function category($categoryId, $pageNo = 1): string
     {
         $categoryId = urldecode($categoryId);
         $pageNo = (int)$pageNo;
@@ -162,7 +162,7 @@ class MarkdownBlog extends BaseController
         return $this->render('index');
     }
 
-    public function tags($tagId, $pageNo = 1)
+    public function tags($tagId, $pageNo = 1): string
     {
         $tagId = urldecode($tagId);
         $pageNo = (int)$pageNo;
@@ -194,7 +194,7 @@ class MarkdownBlog extends BaseController
         return $this->render('index');
     }
 
-    public function search()
+    public function search(): string
     {
         $keyword = $this->request->get("keyword");
         $keyword = trim($keyword);
@@ -216,7 +216,7 @@ class MarkdownBlog extends BaseController
      * @param $blogId
      * @return Response|int|string
      */
-    public function blog($blogId)
+    public function blog($blogId): Response|int|string
     {
         $blogIdMd5 = md5($blogId);
         //dd($blogIdMd5);
@@ -233,7 +233,7 @@ class MarkdownBlog extends BaseController
 
 
     //渲染页面
-    private function render($tpl)
+    private function render($tpl): string
     {
         $htmlPage = $this->twig->render($tpl, $this->data);
 
@@ -248,19 +248,18 @@ class MarkdownBlog extends BaseController
             Cache::put($cacheKey, $htmlPage, GB_PAGE_CACHE_TIME);
         }
         $this->response->setContent($htmlPage);
-        return $this->response->send();
-
+        $this->response->send();
+        return "";
     }
 
     /**
      * 按月归档下的博客列表
      * @param $yearMonthId
      * @param int $pageNo
-     * @return Response|string
+     * @return string
      */
-    public function archive($yearMonthId, $pageNo = 1)
+    public function archive($yearMonthId, int $pageNo = 1): string
     {
-        $pageNo = (int)$pageNo;
         $pageSize = $this->confObj['blog']['pageSize'];
         $pageBarSize = $this->confObj['blog']['pageBarSize'];
 
@@ -290,7 +289,7 @@ class MarkdownBlog extends BaseController
     }
 
     //设置渲染数据
-    private function setData($key, $dataObj)
+    private function setData($key, $dataObj): void
     {
         $this->data[$key] = $dataObj;
     }
@@ -299,7 +298,7 @@ class MarkdownBlog extends BaseController
      * 计算缓存Key
      * @return string
      */
-    private function getCacheKey()
+    private function getCacheKey(): string
     {
         return $this->confObj['theme'] . "_" . md5($this->request->url()) . ".html"; //category/1460001917
     }

@@ -1,79 +1,92 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+## 一. 简介 ##
+markdown-blog-with-laravel是一个简单易用的Markdown博客系统，它不需要数据库，没有管理后台功能，更新博客只需要添加你写好的Markdown文件即可。它摆脱了在线编辑器排版困难，无法实时预览的缺点，一切都交给Markdown来完成，一篇博客就是一个Markdown文件。同时也支持评论，代码高亮，数学公式，页面PV统计等常用功能。提供了不同的主题样式，你可以根据自己的喜好配置，如果你想自己制作博客主题，也是非常容易的。支持整站静态导出，你完全可以导出整站静态网页部署到Github Pages。
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+预览
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+![screenshot]()
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 二. 功能特点 ##
 
-## Learning Laravel
+1. 使用Markdown
+2. 评论框
+3. 代码高亮
+4. PV统计
+5. Latex数学公式
+6. 自制主题
+7. 响应式
+8. 全站静态导出
+9. 良好的SEO
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 三. markdown-blog优势 ##
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+1. 无需数据库，系统更轻量，移植更方便
+2. 使用Markdown编写，摆脱后台编辑排版困难，无法实时预览的缺点
+3. 可全站静态导出
+4. 配置灵活，可自由开关某些功能
+5. 多主题支持，可自制主题
+6. 博客，分类，标签，归档
 
-## Laravel Sponsors
+## 四. 环境要求 ##
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- PHP 5.2.4+ 建议php7.0+
+- mbstring扩展支持
+- php.ini开启short_open_tag = On
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
-- [云软科技](http://www.yunruan.ltd/)
+## 五. 安装步骤 ##
 
-## Contributing
+1. 下载源代码
+2. 解压上传到你的PHP网站根目录
+3. 打开浏览器，访问网站首页
+4. 上传Markdown文件到`blog`文件夹
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 六. 详细说明 ##
 
-## Code of Conduct
+[1. 安装][1]  
+[2. 目录结构][2]  
+[3. 配置说明][3]  
+[4. 编写博客][4]  
+[5. 评论，订阅，统计等][5]  
+[6. 缓存机制][6]  
+[7. 全站静态导出][7]  
+[8. 主题制作][8]  
+[9. 在Nginx上运行][9]  
+[10. 在Apache上运行][10]  
+[11. 在SAE上运行][11]  
+[12. 使用Github Pages搭建博客][12]  
+[13. 升级][13]  
+[14. 从wordpress导入][14]
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 七. 问题及bug反馈 ##
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 八. 使用者列表 ##
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## 九. 感谢 ##
+
+成长需要喜欢Markdown，喜欢写博客的各位亲们支持！感谢你们使用，感激你们对本项目的良好建议和Bug反馈。
+
+
+
+# 已测试
+[x]导出静态网站
+[x]wordpresss导入
+[x]文章搜索功能
+[x]404
+
+
+# 更新日志
+
+* 20230720
+    * 升级到支持php8.1.x,laravel框架升级到10.x
+
+* 20200718
+    * quest模板全部改成twig后缀,便于IDE识别模板引擎
+    * 渲染页面的时候直接选择模板名,不带后缀
+    * develop环境不缓存页面内容
+    * phpQuery改成composer导入
+    * 修复导入wordpress5.4版本的文章分类不正确的问题
