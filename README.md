@@ -4,7 +4,7 @@ markdown-blog-with-laravel是一个简单易用的Markdown博客系统，它不�
 
 预览
 
-![screenshot]()
+![screenshot](/img/img.png)
 
 ## 二. 功能特点 ##
 
