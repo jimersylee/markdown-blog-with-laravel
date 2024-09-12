@@ -2,7 +2,6 @@
 markdown-blog-with-laravel是一个简单易用的Markdown博客系统，它不需要数据库，没有管理后台功能，更新博客只需要添加你写好的Markdown文件即可。它摆脱了在线编辑器排版困难，无法实时预览的缺点，一切都交给Markdown来完成，一篇博客就是一个Markdown文件。同时也支持评论，代码高亮，数学公式，页面PV统计等常用功能。提供了不同的主题样式，你可以根据自己的喜好配置，如果你想自己制作博客主题，也是非常容易的。支持整站静态导出，你完全可以导出整站静态网页部署到Github Pages。
 
 
-
 预览
 
 ![screenshot]()
@@ -30,7 +29,7 @@ markdown-blog-with-laravel是一个简单易用的Markdown博客系统，它不�
 
 ## 四. 环境要求 ##
 
-- PHP 5.2.4+ 建议php7.0+
+- PHP8.1.0+
 - mbstring扩展支持
 - php.ini开启short_open_tag = On
 
@@ -43,20 +42,10 @@ markdown-blog-with-laravel是一个简单易用的Markdown博客系统，它不�
 
 ## 六. 详细说明 ##
 
-[1. 安装][1]  
-[2. 目录结构][2]  
-[3. 配置说明][3]  
-[4. 编写博客][4]  
-[5. 评论，订阅，统计等][5]  
-[6. 缓存机制][6]  
-[7. 全站静态导出][7]  
-[8. 主题制作][8]  
-[9. 在Nginx上运行][9]  
-[10. 在Apache上运行][10]  
-[11. 在SAE上运行][11]  
-[12. 使用Github Pages搭建博客][12]  
-[13. 升级][13]  
-[14. 从wordpress导入][14]
+本地开发
+cp .env.example .env
+composer install
+php artisan serve
 
 ## 七. 问题及bug反馈 ##
 
@@ -73,10 +62,10 @@ markdown-blog-with-laravel是一个简单易用的Markdown博客系统，它不�
 
 
 # 已测试
-[x]导出静态网站
-[x]wordpresss导入
-[x]文章搜索功能
-[x]404
+- [x] 导出静态网站
+- [x] wordpresss导入
+- [x] 文章搜索功能
+- [x] 404
 
 
 # 更新日志
