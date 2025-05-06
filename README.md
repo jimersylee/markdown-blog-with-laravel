@@ -29,7 +29,7 @@ markdown-blog-with-laravel是一个简单易用的Markdown博客系统，它不�
 
 ## 四. 环境要求 ##
 
-- PHP8.1.0+
+- PHP8.2+
 - mbstring扩展支持
 - php.ini开启short_open_tag = On
 
