@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2bff28f345d7878dfdf65dc80c1d35bb",
+    "content-hash": "77fc46691b03f4ec57a9bc3f1309352a",
     "packages": [
         {
             "name": "brick/math",
@@ -155,7 +155,7 @@
             "version": "v3.0.3",
             "dist": {
                 "type": "zip",
-                "url": "https://mirrors.cloud.tencent.com/repository/composer/dflydev/dot-access-data/v3.0.3/dflydev-dot-access-data-v3.0.3.zip",
+                "url": "https://mirrors.tencent.com/repository/composer/dflydev/dot-access-data/v3.0.3/dflydev-dot-access-data-v3.0.3.zip",
                 "reference": "a23a2bf4f31d3518f3ecb38660c95715dfead60f",
                 "shasum": ""
             },
@@ -933,11 +933,11 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v12.10.2",
+            "version": "12.x-dev",
             "dist": {
                 "type": "zip",
-                "url": "https://mirrors.tencent.com/repository/composer/laravel/framework/v12.10.2/laravel-framework-v12.10.2.zip",
-                "reference": "0f123cc857bc177abe4d417448d4f7164f71802a",
+                "url": "https://mirrors.tencent.com/repository/composer/laravel/framework/12.x-dev/laravel-framework-12.x-dev.zip",
+                "reference": "22f61b33090b57ab154e840752b0d2dbd0a7a3d7",
                 "shasum": ""
             },
             "require": {
@@ -1138,7 +1138,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-04-24T14:11:20+00:00"
+            "time": "2025-04-16T15:45:59+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -1313,7 +1313,7 @@
             "version": "dev-main",
             "dist": {
                 "type": "zip",
-                "url": "https://mirrors.cloud.tencent.com/repository/composer/league/commonmark/dev-main/league-commonmark-dev-main.zip",
+                "url": "https://mirrors.tencent.com/repository/composer/league/commonmark/dev-main/league-commonmark-dev-main.zip",
                 "reference": "01ad002b538ff3164e954d5ce15ec59d270c068c",
                 "shasum": ""
             },
@@ -1396,7 +1396,7 @@
             "version": "v1.2.0",
             "dist": {
                 "type": "zip",
-                "url": "https://mirrors.cloud.tencent.com/repository/composer/league/config/v1.2.0/league-config-v1.2.0.zip",
+                "url": "https://mirrors.tencent.com/repository/composer/league/config/v1.2.0/league-config-v1.2.0.zip",
                 "reference": "754b3604fb2984c71f4af4a9cbe7b57f346ec1f3",
                 "shasum": ""
             },
@@ -1989,7 +1989,7 @@
             "version": "v1.3.2",
             "dist": {
                 "type": "zip",
-                "url": "https://mirrors.cloud.tencent.com/repository/composer/nette/schema/v1.3.2/nette-schema-v1.3.2.zip",
+                "url": "https://mirrors.tencent.com/repository/composer/nette/schema/v1.3.2/nette-schema-v1.3.2.zip",
                 "reference": "da801d52f0354f70a638673c4a0f04e16529431d",
                 "shasum": ""
             },
@@ -2045,7 +2045,7 @@
             "version": "v4.0.6",
             "dist": {
                 "type": "zip",
-                "url": "https://mirrors.cloud.tencent.com/repository/composer/nette/utils/v4.0.6/nette-utils-v4.0.6.zip",
+                "url": "https://mirrors.tencent.com/repository/composer/nette/utils/v4.0.6/nette-utils-v4.0.6.zip",
                 "reference": "ce708655043c7050eb050df361c5e313cf708309",
                 "shasum": ""
             },
@@ -2392,7 +2392,7 @@
             "version": "1.0.0",
             "dist": {
                 "type": "zip",
-                "url": "https://mirrors.cloud.tencent.com/repository/composer/psr/event-dispatcher/1.0.0/psr-event-dispatcher-1.0.0.zip",
+                "url": "https://mirrors.tencent.com/repository/composer/psr/event-dispatcher/1.0.0/psr-event-dispatcher-1.0.0.zip",
                 "reference": "dbefd12671e8a14ec7f180cab83036ed26714bb0",
                 "shasum": ""
             },
@@ -3096,7 +3096,7 @@
             "version": "v3.5.1",
             "dist": {
                 "type": "zip",
-                "url": "https://mirrors.cloud.tencent.com/repository/composer/symfony/deprecation-contracts/v3.5.1/symfony-deprecation-contracts-v3.5.1.zip",
+                "url": "https://mirrors.tencent.com/repository/composer/symfony/deprecation-contracts/v3.5.1/symfony-deprecation-contracts-v3.5.1.zip",
                 "reference": "74c71c939a79f7d5bf3c1ce9f5ea37ba0114c6f6",
                 "shasum": ""
             },
@@ -3935,7 +3935,7 @@
             "version": "v1.31.0",
             "dist": {
                 "type": "zip",
-                "url": "https://mirrors.cloud.tencent.com/repository/composer/symfony/polyfill-php80/v1.31.0/symfony-polyfill-php80-v1.31.0.zip",
+                "url": "https://mirrors.tencent.com/repository/composer/symfony/polyfill-php80/v1.31.0/symfony-polyfill-php80-v1.31.0.zip",
                 "reference": "60328e362d4c2c802a54fcbf04f9d3fb892b4cf8",
                 "shasum": ""
             },
