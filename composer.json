@@ -18,7 +18,7 @@
         "guzzlehttp/guzzle": "^7.0",
         "laravel/framework": "^12.12",
         "laravel/tinker": "^2.",
-        "league/commonmark": "^2.7",
+        "league/commonmark": "^2.7.0",
         "mustangostang/spyc": "^0.6.3",
         "nunomaduro/termwind": "^2.0",
         "twig/twig": "^3.0"
