@@ -21,6 +21,7 @@
         "league/commonmark": "^2.7.0",
         "mustangostang/spyc": "^0.6.3",
         "nunomaduro/termwind": "^2.0",
+        "symfony/http-foundation": "7.3.7",
         "twig/twig": "^3.0"
     },
     "require-dev": {
